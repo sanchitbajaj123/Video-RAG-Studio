@@ -27,7 +27,7 @@ app.post("/checkhash",async (req,res)=>{
             res.status(200).send(result);
             return;
         }
-        res.status(205);
+        res.status(205).send("available");
         return;
     }
     catch(err){
